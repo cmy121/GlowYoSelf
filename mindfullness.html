@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Wellness - Mindfulness Practices</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="MentalHealth.html">Mental Wellness</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                       
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="mindfullness.html">Mindfulness Practices</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-4">
+        <div class="container">
+            <h1>Mindfulness Practices</h1>
+            <p class="lead">Simple techniques to bring peace and presence to your daily life</p>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="practice-timer card">
+                    <div class="card-body">
+                        <h3 class="text-center mb-3">Meditation Timer</h3>
+                        <p class="text-center">Take a moment to breathe and be present</p>
+                        
+                        <div class="timer-display" id="timer-display">05:00</div>
+                        
+                        <div class="timer-controls text-center">
+                            <div class="btn-group mb-3" role="group">
+                                <button class="btn btn-outline-primary" data-time="1">1 min</button>
+                                <button class="btn btn-outline-primary active" data-time="5">5 min</button>
+                                <button class="btn btn-outline-primary" data-time="10">10 min</button>
+                            </div>
+                            <div>
+                                <button id="start-timer" class="btn btn-primary">Start</button>
+                                <button id="pause-timer" class="btn btn-warning" disabled>Pause</button>
+                                <button id="reset-timer" class="btn btn-danger" disabled>Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Daily Mindfulness Practices</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card practice-card h-100">
+                    <img src="images/Mindful_Breathing.jpg" class="card-img-top" alt="Mindful Breathing">
+                    <div class="card-body">
+                        <h5 class="card-title">Mindful Breathing</h5>
+                        <p class="card-text">Focus on your breath. Inhale slowly through your nose for 4 counts, hold for 2, then exhale through your mouth for 6 counts. Repeat for 5 minutes.</p>
+                        <button class="btn btn-primary save-practice" data-practice="Mindful Breathing">Save Practice</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card practice-card h-100">
+                    <img src="images/Body_Scan.jpeg" class="card-img-top" alt="Body Scan">
+                    <div class="card-body">
+                        <h5 class="card-title">Body Scan</h5>
+                        <p class="card-text">Sit or lie comfortably. Close your eyes and slowly scan your body from head to toe, noticing any sensations without judgment.</p>
+                        <button class="btn btn-primary save-practice" data-practice="Body Scan">Save Practice</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card practice-card h-100">
+                    <img src="images/Mindful_Walking.jpg" class="card-img-top" alt="Mindful Walking">
+                    <div class="card-body">
+                        <h5 class="card-title">Mindful Walking</h5>
+                        <p class="card-text">Walk slowly and deliberately. Notice the sensation of your feet touching the ground, the movement of your body, and your surroundings.</p>
+                        <button class="btn btn-primary save-practice" data-practice="Mindful Walking">Save Practice</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Your Saved Practices</h2>
+        <div class="row" id="saved-practices-container">
+            <!-- Saved practices will appear here -->
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Mindfulness Video Exercises</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/6p_yaNFSYao" 
+                                title="Mindful Breathing Exercise" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mindful Breathing</h5>
+                        <p class="card-text">Learn the fundamentals of mindful breathing.</p>
+                        <button class="btn btn-primary save-video" data-video-id="6p_yaNFSYao">Save Video</button>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/1ZYbU82GVz4" 
+                                title="5-Minute Mindfulness" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">5-Minute Mindfulness</h5>
+                        <p class="card-text">Quick mindfulness exercise for busy schedules.</p>
+                        <button class="btn btn-primary save-video" data-video-id="1ZYbU82GVz4">Save Video</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="container my-5 p-4 bg-light rounded">
+        <h3 class="text-center mb-3">Gratitude Journal</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="gratitude-entry" style="height: 100px"></textarea>
+                    <label for="gratitude-entry">What are you grateful for today?</label>
+                </div>
+                <div class="text-center">
+                    <button id="save-gratitude" class="btn btn-success">Save Entry</button>
+                </div>
+                <div id="gratitude-message" class="mt-3"></div>
+                
+                <div id="previous-entries" class="mt-4">
+                    <h5>Previous Entries</h5>
+                    <ul class="list-group" id="gratitude-list">
+                        <!-- Previous entries will be loaded here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="social-media-container mb-3">
+                <a href="#" class="btn-instagram social-share" data-platform="instagram">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+                <a href="#" class="btn-x social-share" data-platform="x">
+                    <i class="bi bi-x"></i> X
+                </a>
+                <a href="#" class="btn-tiktok social-share" data-platform="tiktok">
+                    <i class="bi bi-tiktok"></i> TikTok
+                </a>
+                <a href="#" class="btn-youtube social-share" data-platform="youtube">
+                    <i class="bi bi-youtube"></i> YouTube
+                </a>
+            </div>
+            <p>Mental Wellness of Healthy Living.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="mindfullness.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Living</title>
+  <link rel="stylesheet" href="RecipeHome.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!--main nav bar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/icon.png" alt="Logo" width="30" height="30" class="me-2" />
+            GrowYoSelf
+        </a>
+          
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="mainpage.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="RecipeHome.html">Recipe</a></li>
+                <li class="nav-item"><a class="nav-link" href="fitness.html">Fitness Routine</a></li>
+                <li class="nav-item"><a class="nav-link" href="MentalHealth.html">Mental Health</a></li>
+                <li class="nav-item"><a class="nav-link" href="artstherapy.html">Arts Therapy</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+  
+  <!--======section for opening quotes from Zen Quote API===============-->
+  <section class="opening">
+    <div class="dark-overlay"></div>
+    <button onclick="getQuote()">
+      <h2 id="quote">"Let food be thy medicine, and medicine be thy food." </h2>
+      <h2 id="author">—Hippocrates</h2>
+    </button>
+  </section>
+
+  <!-- Recipe category cards -->
+  <section class="sec1">
+    <div class="card">
+      <div class="head">Low calorie recipes</div>
+      <div class="content">
+        Delicious meals that keep your calorie intake in check<br/>
+        <a class="button" href="LowCalories.html">Let's go</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="head">High protein recipes</div>
+      <div class="content">
+        Meals to fuel muscle growth and recovery<br/>
+        <a class="button" href="HighProtein.html">Let's go</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="head">Low sugar recipes</div>
+      <div class="content">
+        Healthy alternatives to satisfy your sweet tooth<br/>
+        <a class="button" href="LowSugar.html">Let's go</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Healthy eating guideline -->
+  <section class="sec2">
+  <h2>Healthy Diet Guidelines</h2>
+    <div id="guidelineCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+  
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="guideline-slide">
+            <img src="images/foodtoavoid.jpg" alt="Limit or Avoid" class="img-fluid">
+            <div class="guideline-text">
+              <h3><b>Limit or Avoid</b></h3>
+              <p>Cut back on processed foods, sugary drinks, and excessive fats.</p>
+              <p>These foods are typically high in sugar, unhealthy fats, salt, and additives, which can lead to chronic diseases like obesity, diabetes, heart disease, and inflammation.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="guideline-slide">
+            <img src="images/foodpyramid (2).png" alt="Variety and Balance" class="img-fluid">
+            <div class="guideline-text">
+              <h3><b>Focus on Variety and Balance</b></h3>
+              <p>Include different food groups in every meal for a balanced diet.</p>
+              <p>According to the Healthy Eating Food Pyramid, we have to eat a variety of foods among all food groups as well as within each group in order to get different nutrients and meet our daily needs.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="guideline-slide">
+            <img src="images/water.webp" alt="Drink Water" class="img-fluid">
+            <div class="guideline-text">
+              <h3><b>Drink Sufficient Water</b></h3>
+              <p>Stay hydrated by drinking 6-8 cups of water daily.</p>
+              <p>Staying hydrated helps regulate body temperature, aids digestion and supports healthy skin.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <div class="guideline-slide">
+            <img src="images/overeat.png" alt="Portion Size" class="img-fluid">
+            <div class="guideline-text">
+              <h3><b>Mind Your Portions</b></h3>
+              <p>Be aware of portion sizes to maintain a healthy weight.</p>
+              <p>Eating the right amount helps your body get the nutrients it needs without excess calories.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Slide 5 -->
+        <div class="carousel-item">
+          <div class="guideline-slide">
+            <img src="images/fruits-and-vegetables-rainbow.webp" alt="Fruits and Veggies" class="img-fluid">
+            <div class="guideline-text">
+              <h3>Eat Fruit and vegetables</h3>
+              <p>Fruit and veggies provide vital nutrients, antioxidants, fiber, and energy while helping prevent diseases and maintaining overall well-being.</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#guidelineCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#guidelineCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+  
+
+  <!-- Healthy Eating Plate -->
+  <section class="sec3">
+    <h2><b>Healthy Eating Plate</b></h2>
+    <div class="plate-container">
+      <div class="video-wrapper">
+        <iframe width="100%" height="100%" 
+              src="https://www.youtube.com/embed/nbMgPljgfJ4" 
+              title="Quarter Quarter Half Plate" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+    </div>
+    <div class="text-wrapper">
+      <p><strong>The "Quarter-Quarter-Half" rule</strong> is a simple and effective way to maintain a balanced and nutritious diet:</p>
+      <ul>
+        <li><strong>¼ Plate:</strong> Whole grains like brown rice, oats, or whole-wheat pasta</li>
+        <li><strong>¼ Plate:</strong> Lean proteins such as chicken, tofu, fish, or legumes</li>
+        <li><strong>½ Plate:</strong> A colorful mix of fruits and vegetables</li>
+      </ul>
+      <p>This visual approach helps promote portion control and encourages a healthy relationship with food.</p>
+    </div></div>
+  </section>
+  
+  <!-- Subscription Section --> 
+  <section class="subscription-section" aria-labelledby="subscription-heading">
+    <div class="subscription-container">
+      <h2 id="subscription-heading">Join Our Healthy Community</h2>
+      <p class="subscription-tagline">Get exclusive content and latest update soon</p>
+      
+      <form id="subscription-form" class="subscription-form">
+        <div class="form-group">
+          <label for="subscriber-name" class="visually-hidden">Your Name</label>
+          <input type="text" id="subscriber-name" placeholder="Your Name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="subscriber-email" class="visually-hidden">Email Address</label>
+          <input type="email" id="subscriber-email" placeholder="Email Address" required>
+        </div>
+        
+        <div class="preferences-group">
+          <p>I'm interested in:</p>
+          <div class="preference-options">
+            <label>
+              <input type="checkbox" name="preferences" value="recipes"> Recipes
+            </label>
+            <label>
+              <input type="checkbox" name="preferences" value="fitness"> Fitness Routine
+            </label>
+            <label>
+              <input type="checkbox" name="preferences" value="mental"> Mental Health Guides
+            </label>
+            <label>
+              <input type="checkbox" name="preferences" value="therapy">Art Therapy
+            </label>
+          </div>
+        </div>
+        
+        <button type="submit" class="subscribe-btn">Subscribe Now</button>
+      </form>
+    <div id="subscription-message" class="subscription-message"></div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <div class="social-media-container mb-3">
+            <a href="#" class="btn-instagram social-share" data-platform="instagram">
+                <i class="bi bi-instagram"></i> Instagram
+            </a>
+            <a href="#" class="btn-x social-share" data-platform="x">
+                <i class="bi bi-x"></i> X
+            </a>
+            <a href="#" class="btn-tiktok social-share" data-platform="tiktok">
+                <i class="bi bi-tiktok"></i> TikTok
+            </a>
+            <a href="#" class="btn-youtube social-share" data-platform="youtube">
+                <i class="bi bi-youtube"></i> YouTube
+            </a>
+        </div>
+        <p>Share on social media.</p>
+    </div>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="RecipeScript.js"></script>
+</body>
+
+</html>

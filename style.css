@@ -1,0 +1,622 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* ===== HOME PAGE DARK MODE ===== */
+body.MentalHealth-page.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.MentalHealth-page.dark-mode .navbar-light {
+    background-color: #e9e2e2 !important;
+    border-bottom: 1px solid #333;
+}
+
+body.MentalHealth-page.dark-mode .hero-section {
+    background: linear-gradient(rgba(30, 30, 30, 0.8), rgba(50, 50, 50, 0.8)) !important;
+}
+
+body.MentalHealth-page.dark-mode .card,
+body.MentalHealth-page.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+    border-color: #333 !important;
+    color: #e0e0e0 !important;
+}
+
+body.MentalHealth-page.dark-mode .btn-outline-primary {
+    color: #64b5f6;
+    border-color: #64b5f6;
+}
+
+body.MentalHealth-page.dark-mode .btn-outline-primary:hover {
+    background-color: rgba(100, 181, 246, 0.1);
+}
+
+body.MentalHealth-page.dark-mode footer.bg-dark {
+    background-color: #000 !important;
+    border-top: 1px solid #333;
+}
+
+body.MentalHealth-page.dark-mode .form-control {
+    background-color: #252525;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+/* ===== Dark Mode Fixes for Mental Health Tips ===== */
+body.MentalHealth-page.dark-mode #mental-tips-container {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+body.MentalHealth-page.dark-mode .mental-tip-card {
+    background-color: #252525 !important;
+    border-left: 4px solid #64b5f6 !important;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #e0e0e0 !important;
+}
+
+body.MentalHealth-page.dark-mode .mental-tip-card p {
+    color: #e0e0e0 !important;
+}
+
+body.MentalHealth-page.dark-mode .mental-tip-card small {
+    color: #b0b0b0 !important;
+}
+
+body.MentalHealth-page.dark-mode #save-tip-btn {
+    background-color: #2e7d32;
+    border-color: #2e7d32;
+    color: white;
+}
+
+/* ===== MINDFULNESS PAGE DARK MODE ===== */
+/* Dark Mode Fixes */
+.dark-mode {
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+/* Fix header/navbar text visibility */
+.dark-mode .navbar {
+    background-color: #1E1E1E !important;
+    border-bottom: 1px solid #333;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+    color: #E0E0E0 !important;
+}
+
+.dark-mode .nav-link.active {
+    color: #64B5F6 !important;
+    font-weight: bold;
+}
+
+/* Fix card visibility */
+.dark-mode .card {
+    background-color: #1E1E1E;
+    border: 1px solid #333;
+    color: #E0E0E0;
+}
+
+/* Fix practice timer box */
+.dark-mode .practice-timer {
+    background-color: #252525;
+    border: 1px solid #444;
+}
+
+.dark-mode .timer-display {
+    color: #64B5F6;
+}
+
+/* Fix gratitude journal */
+.dark-mode #gratitude-entry {
+    background-color: #252525;
+    color: #FFFFFF;
+    border: 1px solid #444;
+}
+
+.dark-mode .list-group-item {
+    background-color: #252525;
+    border-color: #333;
+    color: #E0E0E0;
+}
+
+.dark-mode .form-floating label {
+    color: #999;
+}
+
+/* Fix saved practices section */
+.dark-mode #saved-practices-container .card {
+    background-color: #252525;
+    border: 1px solid #444;
+}
+
+/* Fix buttons visibility */
+.dark-mode .btn-primary {
+    background-color: #1976D2;
+    border-color: #1976D2;
+}
+
+.dark-mode .btn-outline-primary {
+    color: #64B5F6;
+    border-color: #64B5F6;
+}
+
+.dark-mode .btn-outline-primary:hover {
+    background-color: rgba(100, 181, 246, 0.1);
+}
+
+/* Fix header background */
+.dark-mode header.bg-primary {
+    background-color: #0d47a1 !important;
+}
+
+/* Fix footer */
+.dark-mode footer.bg-dark {
+    background-color: #000 !important;
+}
+
+/* Gratitude Journal */
+body.mindfulness-page.dark-mode #gratitude-journal-section {
+    background-color: #1e1e1e !important;
+    border: 1px solid #333 !important;
+}
+
+body.mindfulness-page.dark-mode #gratitude-entry {
+    background-color: #252525 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #444 !important;
+}
+
+body.mindfulness-page.dark-mode #gratitude-list {
+    background-color: #252525 !important;
+}
+
+body.mindfulness-page.dark-mode .list-group-item {
+    background-color: #2d2d2d !important;
+    border-color: #3a3a3a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Buttons */
+body.mindfulness-page.dark-mode .btn-primary {
+    background-color: #1976d2 !important;
+    border-color: #1976d2 !important;
+}
+
+body.mindfulness-page.dark-mode .btn-success {
+    background-color: #388e3c !important;
+    border-color: #388e3c !important;
+}
+
+body.mindfulness-page.dark-mode .btn-outline-danger {
+    color: #ff6b6b !important;
+    border-color: #ff6b6b !important;
+}
+
+/* ===== Enhanced Gratitude Journal - Dark Mode ===== */
+/* ===== Gratitude Journal - Dark Mode Fix ===== */
+.dark-mode section.bg-light.rounded {  /* Targets the gratitude journal section */
+    background-color: #1e1e1e !important;
+    border-color: #333 !important;
+}
+
+.dark-mode #gratitude-entry {
+    background-color: #252525;
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
+
+.dark-mode #gratitude-entry::placeholder {
+    color: #777;
+}
+
+.dark-mode .form-floating>label {
+    color: #999;
+}
+
+.dark-mode #gratitude-list {
+    background-color: #252525;
+    border: 1px solid #333;
+}
+
+.dark-mode #gratitude-list .list-group-item {
+    background-color: #2d2d2d;
+    border-color: #3a3a3a;
+    color: #e0e0e0;
+}
+
+.dark-mode #previous-entries h5 {
+    color: #64b5f6;
+    border-bottom: 1px solid #444;
+}
+
+.dark-mode #save-gratitude {
+    background-color: #2e7d32;
+    border-color: #2e7d32;
+}
+
+.dark-mode #save-gratitude:hover {
+    background-color: #1b5e20;
+    border-color: #1b5e20;
+}
+
+.dark-mode .remove-entry {
+    color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.dark-mode .remove-entry:hover {
+    background-color: rgba(255, 107, 107, 0.1);
+}
+
+/* Floating label color */
+.dark-mode .form-floating>label {
+    color: #9E9E9E;
+}
+
+.dark-mode .form-floating>.form-control:focus~label,
+.dark-mode .form-floating>.form-control:not(:placeholder-shown)~
+
+.dark-mode .form-floating label {
+    color: #999;
+}
+
+/* Fix saved practices section */
+.dark-mode #saved-practices-container .card {
+    background-color: #252525;
+    border: 1px solid #444;
+}
+
+/* Fix buttons visibility */
+.dark-mode .btn-primary {
+    background-color: #1976D2;
+    border-color: #1976D2;
+}
+
+.dark-mode .btn-outline-primary {
+    color: #64B5F6;
+    border-color: #64B5F6;
+}
+
+.dark-mode .btn-outline-primary:hover {
+    background-color: rgba(100, 181, 246, 0.1);
+}
+
+/* Fix header background */
+.dark-mode header.bg-primary {
+    background-color: #0d47a1 !important;
+}
+
+/* Fix footer */
+.dark-mode footer.bg-dark {
+    background-color: #000 !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(100, 181, 246, 0.8), rgba(144, 202, 249, 0.8)), url('https://source.unsplash.com/random/1200x600/?calm');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    margin-bottom: 30px;
+}
+
+/* Card Styling */
+.card {
+    transition: transform 0.3s ease;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.calm-theme .card {
+    background-color: #f8f9fa;
+    border: 1px solid #64B5F6;
+}
+
+/* Tip Card */
+.mental-tip-card {
+    border-left: 4px solid #64B5F6;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f5f9ff;
+    border-radius: 5px;
+}
+
+/* Mood buttons */
+.mood-buttons .btn {
+    margin: 0 5px;
+    border-radius: 30px;
+    padding: 8px 16px;
+}
+
+.mood-buttons .btn.active {
+    font-weight: bold;
+}
+
+/* Animation for Saved Message */
+.save-message {
+    animation: fadeOut 3s forwards;
+}
+
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .mood-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mood-buttons .btn {
+        margin: 5px 0;
+    }
+}
+
+/* Mindfulness practice card */
+.practice-card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.practice-timer {
+    background-color: #f0f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.timer-display {
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 15px 0;
+}
+
+.timer-controls .btn {
+    margin: 0 5px;
+    border-radius: 30px;
+}
+
+.timer-controls .btn.active {
+    background-color: #64B5F6;
+    color: white;
+}
+
+/* Gratitude Journal */
+#gratitude-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.remove-entry, .remove-practice {
+    transition: all 0.2s;
+}
+
+.remove-entry:hover, .remove-practice:hover {
+    transform: scale(1.1);
+}
+
+/* Social Media Buttons */
+/* Add these styles to your style.css file */
+.btn-instagram, .btn-x, .btn-tiktok, .btn-youtube {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: white !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-instagram {
+    background: linear-gradient(45deg, 
+        #f09433 0%, #e6683c 25%, #dc2743 50%, 
+        #cc2366 75%, #bc1888 100%);
+}
+
+.btn-x {
+    background-color: #000000;
+}
+
+.btn-tiktok {
+    background: linear-gradient(90deg, #25F4EE, #FE2C55, #000000);
+}
+
+.btn-youtube {
+    background-color: #FF0000;
+}
+
+.social-media-container a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    opacity: 0.9;
+}
+
+/* Dark Mode Styles */
+.dark-mode .btn-instagram {
+    background: linear-gradient(45deg, 
+        #d18a2e 0%, #d45a2f 25%, #c61f37 50%, 
+        #b31a52 75%, #9e1368 100%);
+}
+
+.dark-mode .btn-x {
+    background-color: #222222;
+}
+
+.dark-mode .btn-tiktok {
+    background: linear-gradient(90deg, #20D5D0, #E1264D, #121212);
+}
+
+.dark-mode .btn-youtube {
+    background-color: #CC0000;
+}
+
+/* Timer Controls */
+.timer-controls .btn {
+    min-width: 80px;
+}
+
+/* Saved Practices Section */
+#saved-practices-container {
+    min-height: 100px;
+}
+
+/* Gratitude Journal */
+#gratitude-entry {
+    resize: none;
+}
+
+.remove-entry {
+    padding: 0 8px;
+    line-height: 1.5;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 576px) {
+    .timer-controls .btn {
+        margin: 5px;
+        width: 100%;
+    }
+    
+    .share-btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Animation for Timer Complete */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.timer-complete {
+    animation: pulse 1s infinite;
+    color: #dc3545;
+}
+
+/* Styling for technique titles to make them look clickable */
+.technique-title {
+    color: #1976D2;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.technique-title:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+/* Modal content styling */
+.technique-details h4 {
+    color: #1976D2;
+    margin-bottom: 15px;
+}
+
+.technique-details h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.technique-details ol, .technique-details ul {
+    padding-left: 20px;
+}
+
+.technique-details li {
+    margin-bottom: 8px;
+}
+
+/* Dark mode adjustments for modal */
+.dark-mode .modal-content {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-color: #333;
+}
+
+.dark-mode .modal-header {
+    border-bottom-color: #333;
+}
+
+.dark-mode .modal-footer {
+    border-top-color: #333;
+}
+
+.dark-mode .technique-details h4 {
+    color: #64B5F6;
+}
+
+.dark-mode .technique-details h5 {
+    color: #e0e0e0;
+}
+
+.dark-mode .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.video-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Dark mode adjustments */
+.dark-mode .video-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+.dark-mode .video-card .card-body {
+    background-color: #252525;
+    color: #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .video-card {
+        margin-bottom: 20px;
+    }
+}

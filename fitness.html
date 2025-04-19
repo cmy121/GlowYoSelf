@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blooming Life</title>
+        <link rel="icon" href="images/icon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="mainpage.css" />
+        <link rel="stylesheet" href="FRstyles.css"/>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/icon.png" alt="Logo" width="30" height="30" class="me-2" />
+                    GrowYoSelf
+                </a>
+                  
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="mainpage.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="RecipeHome.html">Recipe</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fitness.html">Fitness Routine</a></li>
+                        <li class="nav-item"><a class="nav-link" href="MentalHealth.html">Mental Health</a></li>
+                        <li class="nav-item"><a class="nav-link" href="artstherapy.html">Arts Therapy</a></li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+
+            <div id="gmailModal" class="modal">
+              <div class="modal-content">
+                <h2>Please enter your Gmail to continue</h2>
+                <form id="gmailForm">
+                  <label for="gmail">Enter your Gmail:</label>
+                  <input type="email" id="gmail" name="gmail" required>
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          
+            <header class="hero-section">
+                <h1><u>Healthy Living Starts Here!</u></h1>
+                <p>Your guide to a better lifestyle through awareness and action.</p>
+            </header>
+            <br>
+            <script>
+              document.getElementById("gmailForm").addEventListener("submit", function(event) {
+              event.preventDefault();  
+              const gmail = document.getElementById("gmail").value;
+              
+              
+              sessionStorage.setItem("userGmail", gmail);
+              
+              
+              setCookie("userGmail", gmail, 7); 
+             
+              document.getElementById("gmailModal").style.display = "none";
+              
+              
+              alert("Gmail saved! You can now use the website.");
+            });
+            
+            window.onload = function() {
+              const sessionGmail = sessionStorage.getItem("userGmail");
+              const storedGmail = getCookie("userGmail");
+            
+              if (sessionGmail || storedGmail) {
+                document.getElementById("welcomeMessage").innerText = "Welcome back, " + (sessionGmail || storedGmail);
+              } else {
+                document.getElementById("gmailModal").style.display = "block";
+              }
+            }
+            </script>
+            <div id="welcomeMessage"></div>
+            <br>
+            <div class="center-content">
+              <main>
+                <section id="intro">
+                  <h2><b><u>Why Live Healthy?</u></b></h2>
+                  <p>
+                    Living a healthy life means that you are needed to be able maintaining physical, mental, and emotional well-being. It involves eating nutritious food, staying active, getting enough rest, and managing stress.
+                  </p>
+                  <br>
+                <div class="benefits-box">
+                  <h3><b>Benefits of Having a Healthy Life</b></h3>
+                  <p>A healthy lifestyle provide varies advantages for the overall quality of life.</p>
+                  <p>
+                    <ul>
+                        <li>Prevents Disease</li>
+                        <li>Save Money</li>
+                        <li>Extends Life Expectancy</li>
+                        <li>Enhanced Vitality</li>
+                        <li>Achieving Quality Sleep</li>
+                        <li>Improves Skin Quality</li>
+                        <li>Cognitive Enhancement</li>
+                        <li>Reduce the Chance of Having Mental Health Issue</li>
+                    </ul>
+                 </p>
+                </div>
+                  <br><br>
+                  <p><strong>
+                    GrowYoSelf will helps you take the first step — <a href="routine.html"> understand your BMI</a> and get a <a href="#recommendation"> personalized exercise recommendation</a> based on your body type.
+                  </strong></p>
+                  <p>We also provide a <a href="#tracking">calendar</a> for you to keep track on your progress.</p>
+                <br>
+                <br>
+                <br>
+                
+            
+            </section>
+
+                <h2 id="tracking"><b><u>Track Your Fitness Progress</u></b></h2>
+                <p>Click on a date in the calendar to add an exercise that you have done that day.</p>
+                <p id="times">* This calendar help you record the activity that you have done.</p>
+          </div>
+                <br>
+                <div id="calendar"></div>
+                <h2 id="recommendation"><b><u>Exercise Information</u></b></h2>
+                <div class="exercise-grid">
+
+                  <div class="exercise-card">
+                    <img src="https://img.youtube.com/vi/ml6cT4AZdqI/0.jpg" width="450px" alt="Cardio" />
+                    <h3>Cardio Exercise</h3>
+                    <p>Why? : Increased stamina, heart and lung fitness, and reduced fatigue.</p>
+                    <p id="times">The Amount of Time : 30 minutes a day, 3 to 5 times per week</p><br>
+                    <a href="https://www.youtube.com/watch?v=ml6cT4AZdqI" target="_blank" class="button">
+                      <img src="images/youtubeButton.jpg" width="150px" height="50" alt="youtube button">
+                    </a>
+                  </div>
+                  <br>
+              
+                  <div class="exercise-card">
+                    <img src="https://img.youtube.com/vi/Yb2TgKMA8y4/hqdefault.jpg" width="450px" alt="Strength Training" />
+                    <h3>Strength Training</h3>
+                    <p>Why? : Improve your ability to do everyday activities, protect your joints from injury and have better balance for reducing your risk of falls.</p>
+                    <p id="times">The Amount of Time : 1 hour a day, 2 to 3 times per week</p><br>
+                    <a href="https://youtu.be/Yb2TgKMA8y4?si=rW267SmpFFnTUqTw" target="_blank" class="button">
+                      <img src="images/youtubeButton.jpg" width="150px" height="50" alt="youtube button">
+                    </a>
+                  </div>
+                  <br>
+              
+                  <div class="exercise-card">
+                    <img src="https://img.youtube.com/vi/v7AYKMP6rOE/0.jpg" width="450px" alt="Yoga" />
+                    <h3>Yoga</h3>
+                    <p>Why? : Improve balance and flexibility.</p>
+                    <p id="times">The Amount of Time : 30 minutes a day, 2 to 3 times per week</p><br>
+                    <a href="https://www.youtube.com/watch?v=v7AYKMP6rOE" target="_blank" class="button">
+                      <img src="images/youtubeButton.jpg" width="150px" height="50" alt="youtube button">
+                    </a>
+                  </div>
+                  <br>
+              
+                  <div class="exercise-card">
+                    <img src="https://img.youtube.com/vi/0Uh7Z0o6XLY/hqdefault.jpg" width="450px" alt="Jogging" />
+                    <h3>Jogging</h3>
+                    <p>Why? : Strengthen muscles and bones.</p>
+                    <p id="times">The Amount of Time : 15 minutes a day, 5 times per week</p><br>
+                    <a href="https://youtu.be/0Uh7Z0o6XLY?si=TmKpfSHLsh2b1YWm" target="_blank" class="button"
+                    ><img src="images/youtubeButton.jpg" width="150px" height="50" alt="youtube button">
+                  </a>
+                  </div>
+                  <br>
+              
+                  <div class="exercise-card">
+                    <img src="https://img.youtube.com/vi/bO6NNfX_1ns/hqdefault.jpg" width="450px" alt="Walking" />
+                    <h3>Light Walking</h3>
+                    <p>Why? : Reduce postprandial glucose concentrations and diastolic BP.</p>
+                    <p id="times">The Amount of Time : 15 minutes a day, Everday</p><br>
+                    <a href="https://youtu.be/bO6NNfX_1ns?si=d_v7Ik4CuVxQCzRC" target="_blank" class="button">
+                      <img src="images/youtubeButton.jpg" width="150px" height="50" alt="youtube button">
+                    </a>
+                  </div>
+                  <br>
+              
+                  <div class="exercise-card">
+                    <img src="https://img.youtube.com/vi/RSxBqqYRTNY/hqdefault.jpg" width="450px" alt="L-I Strength" />
+                    <h3>Low-Impact Strength Training</h3>
+                    <p>Why? : Strengthening muscles without incurring a lots of wear and tear on your joints.</p>
+                    <p id="times">The Amount of Time : 1 hour a day, 2 times per week</p><br>
+                    <a href="https://youtu.be/RSxBqqYRTNY?si=un6VwD1Pesu5oK1T" target="_blank" class="button">
+                      <img src="images/youtubeButton.jpg" width="150px" height="50" alt="youtube button">
+                    </a>
+                  </div>
+                  <br>
+              
+                  <div class="exercise-card">
+                    <img src="https://img.youtube.com/vi/INKykjqBkJ4/hqdefault.jpg" width="450px" alt="Aqua Aerobics" />
+                    <h3>Aqua Aerobics</h3>
+                    <p>Why? : Water's resistance creates a challenging workout that helps burn calories.</p>
+                    <p id="times">The Amount of Time : 1 hour a day, 3 times per week</p><br>
+                    <a href="https://youtu.be/INKykjqBkJ4?si=rYO0QdGM-eqnwP27" target="_blank" class="button">
+                      <img src="images/youtubeButton.jpg" width="150px" height="50" alt="youtube button">
+                    </a>
+                  </div>
+                  <br>
+              
+              
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                      const showCalendar = document.getElementById('calendar');
+                      const calendar = new FullCalendar.Calendar(showCalendar, {
+                        initialView: 'dayGridMonth',
+                        selectable: true,
+                        dateClick: function (info) {
+                          const exercise = prompt("Enter exercise name (or leave blank to remove):");
+                          const existing = calendar.getEvents().find(event => event.startStr === info.dateStr);
+                  
+                          if (exercise) {
+                            if (!existing) {
+                              calendar.addEvent({ title: exercise, start: info.dateStr });
+                            } else {
+                              alert("You already have an exercise on this day.");
+                            }
+                          } else {
+                            if (existing) existing.remove();
+                          }
+                        }
+                      });
+                      calendar.render();
+                    });
+                </script>
+        <br>
+        <br>
+      <div class="center-content">
+        <p><b>This button below will bring you to the BMI calculator.</b></p>
+        
+        <a href="routine.html" class="button">
+          <img src="images/clickme.png" width="150px" height="100" alt="click me button">
+        </a>
+      </div>
+        <br>
+        <br>
+        <br>
+        <footer class="bg-dark text-white py-4">
+          <div class="container text-center">
+              <div class="social-media-container mb-3">
+                  <a href="#" class="btn-instagram social-share" data-platform="instagram">
+                      <i class="bi bi-instagram"></i> Instagram
+                  </a>
+                  <a href="#" class="btn-x social-share" data-platform="x">
+                      <i class="bi bi-x"></i> X
+                  </a>
+                  <a href="#" class="btn-tiktok social-share" data-platform="tiktok">
+                      <i class="bi bi-tiktok"></i> TikTok
+                  </a>
+                  <a href="#" class="btn-youtube social-share" data-platform="youtube">
+                      <i class="bi bi-youtube"></i> YouTube
+                  </a>
+              </div>
+              <p>Healthy Living © 2023. All rights reserved.</p>
+          </div>
+        </footer>
+        
+          <script src="FRscript.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+    font-family:'trebuchet ms',sans-serif;
+    color: black;
+}
+
+h1{
+    color: rgb(9, 127, 163);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+    color: #1cc538;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+    color: olivedrab;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#times{
+  color: #1cc538;
+}
+  
+  #bmi-output {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  #bmi-output p {
+    margin: 6px 0;
+    line-height: 1.4;
+    font-size: 1.5rem;
+  }
+
+  #bmi-output img {
+    border-radius: 8px;
+  }
+
+  #bmi-description {
+    max-width: 400px; 
+    white-space: normal;
+    line-height: 1.4;
+    margin-top: 8px;
+    font-size: 1.5rem;
+  }
+
+  .bmi-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .bmi-column {
+    flex: 1;
+    padding: 16px;
+    box-sizing: border-box;
+    min-height: 200px;
+  }
+
+  .bmi-column:not(:last-child) {
+    border-right: 1px solid black; /* Vertical lines between columns */
+  }
+
+  #bmi-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.4;
+  }
+
+   #calendar {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  
+
+    .exercise-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Makes it responsive */
+      gap: 20px;
+      justify-content: center;
+      padding: 0 20px; /* Optional padding to the sides */
+    }
+
+    .exercise-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      cursor: pointer;
+      animation: none;
+      max-width: 488px;
+      margin: 0 auto;
+    }
+    
+    /* Hover animation */
+    .exercise-card:hover {
+      animation: jump 0.4s ease;
+    }
+    
+    /* Define the jump keyframes */
+    @keyframes jump {
+      0% { transform: translateY(0); }
+      30% { transform: translateY(-10px); }
+      60% { transform: translateY(5px); }
+      100% { transform: translateY(0); }
+    }
+    
+    .exercise-card:last-child:nth-child(odd) {
+      grid-column: span 2;
+      justify-self: center;
+      width: 50%;
+    }
+
+    .center-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .center-content h2{
+      color: rgb(22, 150, 224);
+    }
+
+    .benefits-box {
+      border: 2px solid #1f98e9;
+      background-color: #b3f1f3;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 700px;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .benefits-box h3 {
+      color: #53eb79;
+      margin-bottom: 10px;
+    }
+    
+    .benefits-box ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+    
+    .hero-section {
+      width: 100vw;
+      background: url('images/nature.webp') center/cover no-repeat;
+      background-color: rgba(255, 255, 255, 0.3); 
+      background-blend-mode: lighten;
+      color: black;
+      text-align: center;
+      padding: 100px 20px;
+      height: 60vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .hero-section h1 {
+      font-size: 3rem;
+      color: rgb(78, 21, 236);
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    
+    .hero-section p {
+      font-size: 2rem;
+      max-width: 900px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    
+    /* Social Media Buttons */
+/* Add these styles to your style.css file */
+.btn-instagram, .btn-x, .btn-tiktok, .btn-youtube {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: white !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, 
+      #f09433 0%, #e6683c 25%, #dc2743 50%, 
+      #cc2366 75%, #bc1888 100%);
+}
+
+.btn-x {
+  background-color: #000000;
+}
+
+.btn-tiktok {
+  background: linear-gradient(90deg, #25F4EE, #FE2C55, #000000);
+}
+
+.btn-youtube {
+  background-color: #FF0000;
+}
+
+.social-media-container a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  opacity: 0.9;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}

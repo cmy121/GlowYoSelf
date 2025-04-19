@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Living - Mental Wellness</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="MentalHealth-page">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="mainpage.html">
+                <img src="images/icon.png" alt="Logo" width="30" height="30" class="me-2">
+                GrowYoSelf
+            </a>
+              
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="mainpage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="RecipeHome.html">Recipe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fitness.html">Fitness Routine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="MentalHealth.html">Mental Health</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artstherapy.html">Arts Therapy</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="MentalHealth.html">Mental Wellness</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul>                
+                        <a class="nav-link" href="mindfullness.html">Mindfulness Practices</a>                               
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-white text-center py-5">
+        <div class="container">
+            <h1>Welcome to Mental Wellness</h1>
+            <p class="lead">Your guide to a balanced mind and healthy life</p>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Daily Mental Health Tips</h2>
+        <div class="row" id="mental-tips-container">
+            <!-- Tips loaded dynamically -->
+        </div>
+        <div class="text-center mt-3">
+            <button id="save-tip-btn" class="btn btn-success">Save Your Favorite Tip</button>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Quick Stress Relief Techniques</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Deep_Breathing.jpg" class="card-img-top" alt="Deep Breathing">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#" class="technique-title" data-technique="Deep Breathing">Deep Breathing</a></h5>
+                        <p class="card-text">A 5-minute breathing exercise to calm your mind.</p>
+                        <button class="btn btn-primary save-technique" data-technique="Deep Breathing">Save Technique</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Progressive_Relaxation.jpg" class="card-img-top" alt="Progressive Relaxation">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#" class="technique-title" data-technique="Progressive Relaxation">Progressive Relaxation</a></h5>
+            <p class="card-text">Tense and relax each muscle group for full-body relaxation.</p>
+            <button class="btn btn-primary save-technique" data-technique="Progressive Relaxation">Save Technique</button>
+        </div>
+    </div>
+</div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Grounding.jpg" class="card-img-top" alt="Grounding">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#" class="technique-title" data-technique="5-4-3-2-1 Grounding">5-4-3-2-1 Grounding</a></h5>
+            <p class="card-text">A sensory awareness exercise to manage anxiety.</p>
+            <button class="btn btn-primary save-technique" data-technique="5-4-3-2-1 Grounding">Save Technique</button>
+        </div>
+    </div>
+</div>
+    </section>
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Guided Meditation Videos</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/inpok4MKVLM" 
+                                title="5-Minute Breathing Meditation" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">5-Minute Breathing Meditation</h5>
+                        <p class="card-text">A short guided session to calm your mind and focus on your breath.</p>
+                        <button class="btn btn-primary save-video" data-video-id="inpok4MKVLM">Save Video</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/O-6f5wQXSu8" 
+                                title="Body Scan Relaxation" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Body Scan Relaxation</h5>
+                        <p class="card-text">Release tension with this progressive muscle relaxation guide.</p>
+                        <button class="btn btn-primary save-video" data-video-id="O-6f5wQXSu8">Save Video</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container my-5 p-4 bg-light rounded">
+        <h3 class="text-center mb-3">Track Your Mood</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="mood-tracker text-center">
+                    <p>How are you feeling today?</p>
+                    <div class="btn-group mood-buttons" role="group">
+                        <button type="button" class="btn btn-outline-success" data-mood="happy">😊 Happy</button>
+                        <button type="button" class="btn btn-outline-primary" data-mood="calm">😌 Calm</button>
+                        <button type="button" class="btn btn-outline-warning" data-mood="stressed">😓 Stressed</button>
+                        <button type="button" class="btn btn-outline-danger" data-mood="sad">😔 Sad</button>
+                        <button type="button" class="btn btn-outline-secondary" data-mood="tired">😴 Tired</button>
+                    </div>
+                    <div id="mood-message" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 p-4 bg-light rounded">
+        <h3 class="text-center mb-3">Get Weekly Mental Wellness Tips</h3>
+        <form id="subscription-form" class="row g-3 justify-content-center">
+            <div class="col-md-6">
+                <input type="email" class="form-control" id="email-input" placeholder="Your email">
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+            </div>
+        </form>
+        <div id="subscription-message" class="text-center mt-3"></div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="social-media-container mb-3">
+                <a href="#" class="btn-instagram social-share" data-platform="instagram">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+                <a href="#" class="btn-x social-share" data-platform="x">
+                    <i class="bi bi-x"></i> X
+                </a>
+                <a href="#" class="btn-tiktok social-share" data-platform="tiktok">
+                    <i class="bi bi-tiktok"></i> TikTok
+                </a>
+                <a href="#" class="btn-youtube social-share" data-platform="youtube">
+                    <i class="bi bi-youtube"></i> YouTube
+                </a>
+            </div>
+            <p>Mental Wellness of Healthy Living.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- DARK MODE TOGGLE SCRIPT - PLACE THIS RIGHT BEFORE CLOSING BODY TAG -->
+    <script>
+        // Dark Mode Toggle Functionality
+        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkModeEnabled', document.body.classList.contains('dark-mode'));
+        });
+
+        // Initialize dark mode from localStorage
+        if (localStorage.getItem('darkModeEnabled') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Debugging console logs (optional)
+        console.log('Dark mode initialized:', localStorage.getItem('darkModeEnabled'));
+    </script>
+    <script src="script.js"></script>
+
+    <!-- Technique Detail Modal -->
+<div class="modal fade" id="techniqueModal" tabindex="-1" aria-labelledby="techniqueModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="techniqueModalLabel">Technique Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="techniqueModalBody">
+                <!-- Content will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

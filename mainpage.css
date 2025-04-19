@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    background-color: #e0f7fa !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #00796b !important;
+}
+
+.nav-link {
+    color: #00796b !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #004d40 !important;
+}
+
+/*=========Intro section======== */
+.intro-section {
+    background-image: url('images/life.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.intro-floating-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 2;
+}
+
+.intro-floating-banner h1 {
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-floating-banner p {
+    color: #555;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.intro-floating-banner .btn-primary {
+    background-color: #f28e2c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.intro-floating-banner .btn-primary:hover {
+    background-color: #e07c10;
+}
+
+/* Style for the explore section */
+#explore {
+    background-color: white;
+    padding: 50px 20px;
+}
+
+
+/* ✅ Responsive Typography */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-section .btn-primary {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/* Responsive Typography for intro section */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-section .btn-primary {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/*=========Explore section========= */
+#explore {
+    background-image: url(''); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    padding: 60px 20px;
+}
+
+.card {
+    min-height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+    position: relative;
+    top: 0;
+}
+
+/* Pop-up effect on hover */
+.card:hover {
+    top: -10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: keep image nice and tidy */
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+
+
+/* Responsive adjustment for small screens */
+@media (max-width: 576px) {
+    .card:hover {
+        transform: scale(1.01);
+    }
+
+    .card:hover .card-img-top {
+        transform: scale(1.03);
+    }
+}
+
+
+
+/* Features */
+.section-heading {
+    font-size: 2.2rem;
+    color: #fc246c;
+}
+
+.feature-box {
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+/*==========Subscription section=======*/
+.subscribe-section {
+    background: linear-gradient(to right, #ffafcc, #bde0fe);
+    padding: 60px 20px;
+}
+
+.subscribe-section h2 {
+    font-size: 2rem;
+}
+
+.subscribe-section input {
+    max-width: 300px;
+    padding: 10px;
+}
+
+.subscribe-section .btn-warning {
+    background-color: #fc246c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.subscribe-section .btn-warning:hover {
+    background-color: #e41b5f;
+}
+
+/*==========Social Media Buttons============*/
+/* Add these styles to your style.css file */
+.btn-instagram, .btn-x, .btn-tiktok, .btn-youtube {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: white !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-instagram {
+    background: linear-gradient(45deg, 
+        #f09433 0%, #e6683c 25%, #dc2743 50%, 
+        #cc2366 75%, #bc1888 100%);
+}
+
+.btn-x {
+    background-color: #000000;
+}
+
+.btn-tiktok {
+    background: linear-gradient(90deg, #25F4EE, #FE2C55, #000000);
+}
+
+.btn-youtube {
+    background-color: #FF0000;
+}
+
+.social-media-container a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    opacity: 0.9;
+}
+
+/* Dark Mode Styles */
+.dark-mode .btn-instagram {
+    background: linear-gradient(45deg, 
+        #d18a2e 0%, #d45a2f 25%, #c61f37 50%, 
+        #b31a52 75%, #9e1368 100%);
+}
+
+.dark-mode .btn-x {
+    background-color: #222222;
+}
+
+.dark-mode .btn-tiktok {
+    background: linear-gradient(90deg, #20D5D0, #E1264D, #121212);
+}
+
+.dark-mode .btn-youtube {
+    background-color: #CC0000;
+}

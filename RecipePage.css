@@ -1,0 +1,178 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #000000;
+  }
+
+  /* ===== Navigation bar for whole ===== */
+
+  .navbar {
+	background-color: #e0f7fa !important;
+  }
+  
+  .navbar-brand {
+	font-weight: bold;
+	color: #4e7d78 !important;
+  }
+  
+  .nav-link {
+	color: #00796b !important;
+	transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+	color: #004d40 !important;
+  }
+  
+  /* Navigation bar for recipe selection*/
+  .sub-bar {
+	background-color: #14312d;
+	padding: 15px 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+  }
+  
+  .section-title {
+	font-weight: bold;
+	font-size: 18px;
+	color: #ffffff;
+  }
+  
+  .tagline {
+	font-size: 16px;
+	font-style: italic;
+	flex: 1;
+	text-align: center;
+	color: #ffffff;
+  }
+  
+  .filters {
+	display: flex;
+	gap: 15px;
+  }
+  
+  .filters button {
+	background: none;
+	border: none;
+	color: #ffffff;
+	font-weight: bold;
+	cursor: pointer;
+	transition: border-bottom 0.2s ease;
+  }
+  
+  .filters button:hover {
+	border-bottom: 2px solid #000;
+  }
+  
+  /* Background images */
+  .pimg1 {
+	background-image: url("images/set-of-american-breakfast-food-with-aesthetic-arrangement-top-view-photo.jpg");
+	min-height: 70%;
+  }
+  
+  .pimg2 {
+	background-image: url('images/NoSugarApplePie.webp');
+	min-height: 400px;
+  }
+
+  .pimg3 {
+	background-image: url('images/apple.png');
+	min-height: 400px;
+  }
+  
+  .pimg4 {/*1st pic for low cal */
+	background-image: url('images/roasted-shrimp-tomatoes-and-spinach-64d14213020a2.avif');
+	min-height: 400px;
+  }
+
+  .pimg5 {/*1st pic or high pro */
+	background-image: url('images/marry-me-chicken.png');
+	min-height: 400px;
+  }
+  .pimg6 {/*2nd pic or high pro */
+	background-image: url('images/marry-me-chicken2.png');
+	min-height: 400px;
+  }
+
+  .pimg7 {/*2nd pic or low cal */
+	background-image: url('images/wp9059520.jpg');
+	min-height: 400px;
+  }
+  
+  .pimg1, .pimg2, .pimg3, .pimg4 , .pimg5, .pimg6, .pimg7 {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.70;
+	background-attachment: fixed;
+  }
+  
+  .ptext {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 27px;
+	color: #000;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+  }
+  
+  .ptext .border {
+	background-color: black;
+	text-shadow: #000000;
+	color: #fff;
+	padding: 20px;
+	font-weight: 500;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .ptext .border.trans {
+	background-color: transparent;
+	font-family:'Times New Roman', Times, serif;
+  }
+  
+  .section {
+	text-align: center;
+	padding: 50px 80px;
+  }
+  
+  .section-light {
+	background-color: #f2f2f2;
+	color: #666;
+  }
+  
+  .section-dark {
+	background-color: #4c4c4c;
+	color: #ddd;
+  }
+  
+  /* Ingredients List */
+  .ingredients-list {
+	list-style: none;
+	padding: 0;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: left;
+  }
+  
+  .ingredients-list li {
+	margin-bottom: 8px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 568px) {
+	.pimg1, .pimg2, .pimg3 {
+	  background-attachment: scroll;
+	}
+  }
+  
